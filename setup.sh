@@ -4,7 +4,7 @@ sudo apt-get install git
 rm ~/.vimrc
 cp vimrc ~/.vimrc
 rm ~/.tmux.conf
-cp tmux.cof ~/.tmux.conf
+cp tmux.conf ~/.tmux.conf
 if [ -z "$(cat ~/.bashrc | grep 'alias tmux="tmux -2"')" ]; then
     echo "Tmux alias not found"
     echo 'alias tmux="tmux -2"' >> ~/.bashrc
