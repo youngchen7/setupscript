@@ -22,6 +22,7 @@ let g:syntastic_check_on_wq = 0
 " Syntastic settings for c++14
 let g:syntastic_cpp_compiler = 'gcc-4.9'
 let g:syntastic_cpp_compiler_options = '-std=c++14'
+let g:syntastic_cpp_check_header = 1
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
