@@ -9,6 +9,12 @@ let g:airline#extensions#tabline#enabled=1 "enable smart tab line
 let g:airline_theme='murmur'
 filetype off                  " required
 
+" Tabbing settings
+set sw=4
+set et
+set ts=4
+set ai
+
 " Syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -20,7 +26,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Syntastic settings for c++14
-let g:syntastic_cpp_compiler = 'gcc-4.9'
 let g:syntastic_cpp_compiler_options = '-std=c++14'
 let g:syntastic_cpp_check_header = 1
 
