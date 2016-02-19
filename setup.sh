@@ -7,7 +7,7 @@ rm ~/.tmux.conf
 cp tmux.conf ~/.tmux.conf
 if [ -z "$(cat ~/.bashrc | grep 'alias tmux="tmux -2"')" ]; then
     echo "Tmux alias not found"
-    echo 'alias tmux="tmux -2"' >> ~/.bashrc
+    printf '\nalias tmux="tmux -2"' >> ~/.bashrc
     source ~/.bashrc
 else
     echo "Tmux alias already in bashrc"
