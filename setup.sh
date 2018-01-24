@@ -5,9 +5,12 @@ rm ~/.vimrc
 cp vimrc ~/.vimrc
 rm ~/.tmux.conf
 cp tmux.conf ~/.tmux.conf
+cp tmux-theme ~/.tmux-theme
+cp shell_prompt.sh ~/.shell_prompt.sh
 if [ -z "$(cat ~/.bashrc | grep 'alias tmux="tmux -2"')" ]; then
     echo "Tmux alias not found"
     printf '\nalias tmux="tmux -2"' >> ~/.bashrc
+    printf '\nsource ~/.shell_prompt.sh' >> ~/.bashrc
     source ~/.bashrc
 else
     echo "Tmux alias already in bashrc"

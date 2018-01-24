@@ -53,6 +53,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Tmuxline
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'edkolev/promptline.vim'
 
 " Tmux navigator
 Plugin 'christoomey/vim-tmux-navigator'
